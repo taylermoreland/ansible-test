@@ -1,0 +1,7 @@
+- name: Manage Windows
+  hosts: win
+  tasks:
+  - name: Create directory structure
+    win_file:
+      path: C:\Temp123\folder
+      state: directory
